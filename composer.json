@@ -1,0 +1,19 @@
+{
+    "name": "lrandom/cp17_avanced",
+    "description": "Du an demo",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Lrandom\\Cp17Avanced\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Luan",
+            "email": "luann4099@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

@@ -1,12 +1,7 @@
 <?php
-$numberA = 6;
-$numberB = 10;
-$total = function () use (&$numberA, $numberB) {
-    $numberA++;
-    return $numberA + $numberB;
-};
+require_once __DIR__ . '/vendor/autoload.php';
+use Lrandom\Cp17Avanced\Controllers\UserController;
+$userController = new UserController();
+echo $userController->index();
 
-
-echo $total();
-echo $numberA;
 ?>
