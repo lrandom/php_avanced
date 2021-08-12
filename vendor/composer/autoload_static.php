@@ -6,22 +6,82 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit84f3f9234947e712b8f7a9fd7b79cbd0
 {
+    public static $files = array (
+        '04c6c5c2f7095ccf6c481d3e53e1776f' => __DIR__ . '/..' . '/mustangostang/spyc/Spyc.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
+        'h' => 
+        array (
+            'hisorange\\BrowserDetect\\' => 24,
+        ),
+        'U' => 
+        array (
+            'UAParser\\' => 9,
+        ),
         'L' => 
         array (
             'Lrandom\\Cp17Avanced\\' => 20,
+            'League\\Pipeline\\' => 16,
+        ),
+        'J' => 
+        array (
+            'Jaybizzle\\CrawlerDetect\\' => 24,
+        ),
+        'D' => 
+        array (
+            'DeviceDetector\\' => 15,
+        ),
+        'C' => 
+        array (
+            'Composer\\CaBundle\\' => 18,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'hisorange\\BrowserDetect\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/hisorange/browser-detect/src',
+        ),
+        'UAParser\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ua-parser/uap-php/src',
+        ),
         'Lrandom\\Cp17Avanced\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
+        ),
+        'League\\Pipeline\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/pipeline/src',
+        ),
+        'Jaybizzle\\CrawlerDetect\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jaybizzle/crawler-detect/src',
+        ),
+        'DeviceDetector\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/matomo/device-detector',
+        ),
+        'Composer\\CaBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/composer/ca-bundle/src',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'D' => 
+        array (
+            'Detection' => 
+            array (
+                0 => __DIR__ . '/..' . '/mobiledetect/mobiledetectlib/namespaced',
+            ),
         ),
     );
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Mobile_Detect' => __DIR__ . '/..' . '/mobiledetect/mobiledetectlib/Mobile_Detect.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -29,6 +89,7 @@ class ComposerStaticInit84f3f9234947e712b8f7a9fd7b79cbd0
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit84f3f9234947e712b8f7a9fd7b79cbd0::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit84f3f9234947e712b8f7a9fd7b79cbd0::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit84f3f9234947e712b8f7a9fd7b79cbd0::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit84f3f9234947e712b8f7a9fd7b79cbd0::$classMap;
 
         }, null, ClassLoader::class);

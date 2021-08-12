@@ -6,5 +6,11 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'hisorange\\BrowserDetect\\' => array($vendorDir . '/hisorange/browser-detect/src'),
+    'UAParser\\' => array($vendorDir . '/ua-parser/uap-php/src'),
     'Lrandom\\Cp17Avanced\\' => array($baseDir . '/src'),
+    'League\\Pipeline\\' => array($vendorDir . '/league/pipeline/src'),
+    'Jaybizzle\\CrawlerDetect\\' => array($vendorDir . '/jaybizzle/crawler-detect/src'),
+    'DeviceDetector\\' => array($vendorDir . '/matomo/device-detector'),
+    'Composer\\CaBundle\\' => array($vendorDir . '/composer/ca-bundle/src'),
 );
